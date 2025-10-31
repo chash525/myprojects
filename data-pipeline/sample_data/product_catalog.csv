@@ -1,0 +1,11 @@
+product_id,name,category,unit_price,stock_quantity,supplier_id
+PROD-A001,Wireless Headphones,Electronics,29.99,150,SUP-001
+PROD-B002,Gaming Laptop,Electronics,149.99,25,SUP-002
+PROD-C003,Coffee Mug,Home & Kitchen,9.99,200,SUP-003
+PROD-D004,Running Shoes,Sports & Outdoors,75.50,80,SUP-001
+PROD-E005,Desk Lamp,Home & Kitchen,45.00,60,SUP-004
+PROD-F006,Bluetooth Speaker,Electronics,89.99,120,SUP-002
+PROD-G007,Water Bottle,Sports & Outdoors,19.99,300,SUP-003
+PROD-H008,Office Chair,Furniture,199.99,40,SUP-005
+PROD-I009,Smartphone Case,Electronics,24.99,180,SUP-001
+PROD-J010,Kitchen Knife Set,Home & Kitchen,79.99,90,SUP-004

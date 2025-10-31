@@ -1,0 +1,100 @@
+[
+  {
+    "customer_id": "CUST-12345",
+    "name": "John Smith",
+    "email": "john.smith@email.com",
+    "phone": "+1-555-0123",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "registration_date": "2023-06-15",
+    "tier": "premium"
+  },
+  {
+    "customer_id": "CUST-67890",
+    "name": "Sarah Johnson",
+    "email": "sarah.j@email.com",
+    "phone": "+1-555-0456",
+    "address": {
+      "street": "456 Oak Ave",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90210"
+    },
+    "registration_date": "2023-08-22",
+    "tier": "standard"
+  },
+  {
+    "customer_id": "CUST-11111",
+    "name": "Mike Davis",
+    "email": "mike.davis@email.com",
+    "phone": "+1-555-0789",
+    "address": {
+      "street": "789 Pine Rd",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60601"
+    },
+    "registration_date": "2023-12-01",
+    "tier": "standard"
+  },
+  {
+    "customer_id": "CUST-22222",
+    "name": "Emily Wilson",
+    "email": "emily.w@email.com",
+    "phone": "+1-555-0321",
+    "address": {
+      "street": "321 Elm St",
+      "city": "Houston",
+      "state": "TX",
+      "zip": "77001"
+    },
+    "registration_date": "2023-09-10",
+    "tier": "premium"
+  },
+  {
+    "customer_id": "CUST-33333",
+    "name": "David Brown",
+    "email": "david.brown@email.com",
+    "phone": "+1-555-0654",
+    "address": {
+      "street": "654 Maple Ave",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip": "85001"
+    },
+    "registration_date": "2023-07-28",
+    "tier": "standard"
+  },
+  {
+    "customer_id": "CUST-44444",
+    "name": "Lisa Garcia",
+    "email": "lisa.garcia@email.com",
+    "phone": "+1-555-0987",
+    "address": {
+      "street": "987 Cedar Ln",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip": "19101"
+    },
+    "registration_date": "2023-11-05",
+    "tier": "premium"
+  },
+  {
+    "customer_id": "CUST-55555",
+    "name": "Robert Miller",
+    "email": "robert.m@email.com",
+    "phone": "+1-555-0147",
+    "address": {
+      "street": "147 Birch St",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip": "78201"
+    },
+    "registration_date": "2023-10-12",
+    "tier": "standard"
+  }
+]

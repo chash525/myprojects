@@ -1,0 +1,25 @@
+{
+  "S3Buckets": [
+    "customer-data-pipeline-input",
+    "customer-data-pipeline-processing",
+    "customer-data-pipeline-output"
+  ],
+  "LambdaFunctions": [
+    "customer-data-validate-data",
+    "customer-data-transform-data",
+    "customer-data-notify-failure",
+    "customer-data-notify-success"
+  ],
+  "SQSQueues": [
+    "customer-data-pipeline-queue"
+  ],
+  "SNSTopics": [
+    "arn:aws:sns:us-east-1:013929207353:customer-data-pipeline-topic"
+  ],
+  "DynamoDBTables": [
+    "customer-data-pipeline-metadata-db"
+  ],
+  "StepFunctions": [
+    "arn:aws:states:us-east-1:013929207353:stateMachine:customer-data-pipeline"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "Comment": "Customer Orders Data Pipeline",
+  "StartAt": "ValidateData",
+  "States": {
+    "ValidateData": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:013929207353:function:customer-data-validate-data",
+      "Next": "TransformData",
+      "Catch": [
+        {
+          "ErrorEquals": ["States.ALL"],
+          "Next": "NotifyFailure"
+        }
+      ],
+      "ResultPath": "$.validate_result"
+    },
+    "TransformData": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:013929207353:function:customer-data-transform-data",
+      "Next": "NotifySuccess",
+      "Parameters": {
+        "bucket.$": "$$.Execution.Input.detail.bucket.name",
+        "key.$": "$$.Execution.Input.detail.object.key"
+      },
+      "Catch": [
+        {
+          "ErrorEquals": ["States.ALL"],
+          "Next": "NotifyFailure"
+        }
+      ]
+    },
+    "NotifySuccess": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:013929207353:function:customer-data-notify-success",
+      "Parameters": {
+        "message": "Pipeline succeeded — all stages completed successfully."
+      },
+      "End": true
+    },
+    "NotifyFailure": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:013929207353:function:customer-data-notify-failure",
+      "Parameters": {
+        "message": "Pipeline failed. Check the Step Function execution for details."
+      },
+      "End": true
+    }
+  }
+}
